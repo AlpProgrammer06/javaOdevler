@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+
+        String mesaj = "Bu gün Hava çok güzel ";
+        System.out.println(mesaj);
+
+
+        String yeniMesaj = mesaj.replace(' ', '-');    // boþluklara - getirir
+        System.out.println(yeniMesaj);
+        System.out.println(mesaj.substring(2));        // 2. indeksten itibaren ekrana bas
+        System.out.println(mesaj.substring(2,11));               // 3. indeksten itibaren 11 'e kadar kes
+
+        for (String kelime : mesaj.split(" ")){     // cümledeki kelimeleri boþluklara göre bölüp ekrana basar
+            System.out.println(kelime);
+        }
+
+        System.out.println(mesaj.toLowerCase());   // bütün harfleri küçük istersek
+        System.out.println(mesaj.toUpperCase());   // bütün harfleri büyük istersek
+        System.out.println(mesaj.trim());          // cümlenin baþýndaki ve sonunda boþluk varsa boþluklarý atar.
+
+
+    }
+}
